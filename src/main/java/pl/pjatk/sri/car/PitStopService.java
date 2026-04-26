@@ -40,7 +40,8 @@ public class PitStopService {
 
             try (MessageConsumer consumer = session.createConsumer(replyQueue)) {
                 Message response = consumer.receive(REPLY_TIMEOUT_MS);
-                if (response instanceof ObjectMessage objMsg) {
+                if (response instanceof ObjectMessage) {
+                    ObjectMessage objMsg = (ObjectMessage) response;
                     return (PitStopDecision) objMsg.getObject();
                 }
                 System.out.println("[CAR] No response received within timeout.");
