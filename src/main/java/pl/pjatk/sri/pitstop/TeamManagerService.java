@@ -1,7 +1,7 @@
 package pl.pjatk.sri.pitstop;
 
-import jakarta.jms.Message;
-import jakarta.jms.ObjectMessage;
+import javax.jms.Message;
+import javax.jms.ObjectMessage;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;

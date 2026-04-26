@@ -1,6 +1,6 @@
 package pl.pjatk.sri.car;
 
-import jakarta.jms.*;
+import javax.jms.*;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 import pl.pjatk.sri.config.Destinations;
